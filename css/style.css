@@ -56,6 +56,7 @@ body{
 
 .text-area{
     width: 50%;
+    font-size: 17px;
 }
 
 @media(max-width: 768px){
@@ -108,14 +109,21 @@ body{
 .hist{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     
+    background-color: #dda25ec9;
+    color: #FEFAE0;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .hist-text{
     width: 57%;
+    font-size: 18px;
+    order: 2;
 }
 
 .himg{
@@ -130,8 +138,28 @@ body{
 
 .himg2{
     width: 40%;
+    order: 3;
 }
 
+@media(max-width:425px){
+    .hist{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .himg2{
+        order: 1;
+    }
+
+    .himg{
+        width: 100%;
+    }
+
+    .hist-text{
+        width: 100%;
+        padding: 10px;
+    }
+}
 /* =========== Cards =========== */
 
 /* Título*/
